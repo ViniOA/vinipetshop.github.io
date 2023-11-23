@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #7BC7FE;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #7a736b;
+    margin-bottom: 20px;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+}
+
+.lista-produtos {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.produto {
+    width: 200px;
+    margin: 40px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produto:hover {
+    transform: scale(1.1); /* Aumenta o tamanho da imagem em 10% */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.logo-produto {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logo-produto img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+
+.button {
+    border: 1px solid;
+    padding: 10px 15px; /* Adicione padding para um visual mais agradável */
+    cursor: pointer; /* Altera o cursor ao passar por cima do botão */
+    transition: background 0.3s ease, border 0.3s ease, color 0.3s ease; /* Adiciona transição suave */
+    border-radius: 10px;
+}
+
+.button:hover {
+    background: #90d7e4;
+    border: 1px solid #7BC7FE;
+    color: #fff;
+}
+

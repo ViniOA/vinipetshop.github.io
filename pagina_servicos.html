@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços - PetShop Online</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.3/dist/sweetalert2.min.css">
+</head>
+<body>
+
+    <!-- Conteúdo da Página de Serviços -->
+    <main>
+        <h2>Serviços</h2>
+
+        <!-- Botões de Serviços -->
+        <div class="botoes-servicos">
+            <div>
+                <button onclick="mostrarCadastro('Banho e Tosa')">Banho e Tosa</button>
+            </div>
+            <div>
+                <button onclick="mostrarCadastro('Remédios')">Remédios</button>
+            </div>
+            <div>
+                <button onclick="mostrarCadastro('Veterinário')">Veterinário</button>
+            </div>
+            <div>
+                <button onclick="mostrarCadastro('Castração')">Castração</button>
+            </div>
+        </div>
+        <div class="imagem-centralizada">
+            <img src="logopetshopvini.png" alt="Descrição da Imagem">
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+
+    <!-- SweetAlert2 JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.3/dist/sweetalert2.all.min.js"></script>
+
+    <script>
+        function mostrarCadastro(servico) {
+            // Utiliza o SweetAlert2 para criar uma janela modal
+            Swal.fire({
+                title: 'Cadastro',
+                html: 'Preencha o formulário de cadastro do cliente e do pet.<br>' +
+                      'Nome do Cliente: <input type="text" id="nomeCliente"><br>' +
+                      'Nome do Pet: <input type="text" id="nomePet"><br>' +
+                      '<button onclick="mostrarAgendamento(\'' + servico + '\')">Próximo</button>',
+                icon: 'info',
+                confirmButtonText: 'Fechar'
+            });
+        }
+
+        function mostrarAgendamento(servico) {
+            // Utiliza o SweetAlert2 para criar uma janela modal
+            Swal.fire({
+                title: 'Agendamento',
+                html: 'Selecione a data e hora para o serviço ' + servico + '.<br>' +
+                      'Data: <input type="date" id="calendario"><br>' +
+                      'Hora: <input type="time" id="hora"><br>' +
+                      '<button onclick="agendar()">Agendar</button>',
+                icon: 'info',
+                confirmButtonText: 'Fechar'
+            });
+        }
+
+        function agendar() {
+            // Lógica para lidar com o agendamento
+            const dataSelecionada = document.getElementById('calendario').value;
+            const horaSelecionada = document.getElementById('hora').value;
+
+            // Exemplo: Mostrar um alerta com a data e hora selecionadas
+            alert('Agendado para ' + dataSelecionada + ' às ' + horaSelecionada);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+/* Reset de Estilos Padrão */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #7BC7FE;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    background-color: #7BC7FE;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #7BC7FE;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Barra de Navegação*/
+
+nav {
+    padding: 20px;
+    text-align: center;
+    margin-top: 01px;
+}
+
+nav a, button {
+    display: block; /* Para ocupar a largura total disponível */
+    width: 200px; /* Largura dos botões */
+    margin: 10px auto; /* Margem para centralizar verticalmente e separar os botões */
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #7f8c8d; /* Cor de fundo cinza */
+    transition: background-color 0.3s ease;
+    border: none; /* Remove a borda padrão */
+    outline: none; /* Remove o contorno ao focar */
+}
+
+nav a:hover {
+    background-color: #95a5a6; /* Cor de fundo cinza mais clara ao passar o mouse */
+}
+
+button:hover {
+    background-color: #95a5a6; /* Cor de fundo cinza mais clara ao passar o mouse */
+}
+
+/* Estilos para Formulários - Exemplo */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+
+
+.conteudo-centralizado {
+    text-align: center;
+    position: relative; /* Necessário para o posicionamento absoluto */
+}
+
+.imagem-sobre-botoes {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Adicione borda arredondada se desejar */
+    position: absolute;
+    top: -50px; /* Ajuste a posição vertical conforme necessário */
+    left: 0;
+    right: 0;
+    margin: auto; /* Centraliza horizontalmente */
+}
+
+/* Estilo para Botões de Serviços */
+.botoes-servicos {
+    text-align: center;
+}
+
+.botoes-servicos a {
+    display: block;
+    width: 300px;
+    margin: 10px auto;
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #7f8c8d;
+    transition: background-color 0.3s ease;
+}
+
+.botoes-servicos a:hover, button {
+    background-color: #95a5a6;
+}
+
+/* Estilo para Botões de Serviços e Imagem */
+main {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.botoes-servicos {
+    flex-direction: column; /* Muda a direção do flex para coluna */
+    text-align: center;
+}
+
+.botoes-servicos a {
+    display: block;
+    width: 200px;
+    margin: 10px auto; /* Centraliza os botões horizontalmente */
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #7f8c8d;
+    transition: background-color 0.3s ease;
+}
+
+.botoes-servicos a:hover {
+    background-color: #95a5a6;
+}
+
+.imagem-centralizada img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Adicione borda arredondada se desejar */
+    margin-left: 20px; /* Adicione margem à esquerda da imagem */
+}
+
+/* Adicione um novo estilo para centralizar os botões */
+.botoes-servicos {
+    margin-left: 100px; /* Adicione margem à esquerda dos botões */
+    margin-right: 100px; /* Adicione margem à direita dos botões */
+}
+
+.espaco-horizontal-entre-formularios {
+    margin-left: 20px; /* Ajuste conforme necessário */
+}
+
+.botao-retornar {
+    display: block;
+    margin-top: 10px; /* Ajuste conforme necessário */
+    text-decoration: none;
+    padding: 8px 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilo para o Botão Telebusca */
+.botao-telebusca {
+    font-size: 15px;
+    display: block;
+    width: 220px;
+    margin: 10px auto; /* Centraliza o botão verticalmente e o separa dos demais */
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #7f8c8d;
+    transition: background-color 0.3s ease;
+    border: none; /* Remove a borda padrão */
+    outline: none; /* Remove o contorno ao focar */
+}
+
+.botao-telebusca:hover {
+    background-color: #95a5a6;
+}
